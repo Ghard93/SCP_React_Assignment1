@@ -1,38 +1,162 @@
-.App {
+.card {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(77, 85, 107);
+  display: none;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgb(47, 52, 66);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.imgContainer {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.banner {
+  background-color: rgb(51, 57, 72);
+  padding-top: 4px;
+}
+
+.navBar {
+  background-color:rgba(47, 52, 66, 0.705);
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navItem {
+  float: left;
+  background-color: rgba(47, 52, 66, 0);
+  padding: 10px;
+  border-style: none;
+  border-bottom: 1px solid;
+  border-color: rgba(47, 52, 66, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  color: rgb(224, 224, 224);
+}
+
+.navItem:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.226));
+  border-bottom: 1px solid;
+  border-color: rgba(255, 255, 255, 0.349);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  background-color: rgb(90, 100, 126);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(25, 28, 36);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(25, 28, 36);
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(25, 28, 36);
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
   color: white;
+  padding-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.frontPage {
+  text-align: center;
+  padding-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  width: 30%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px){
+  .imgContainer {    
+    width: 60%;    
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 30px;
   }
+}
+
+@media screen and (max-width: 500px){
+  .card {
+    padding: 10px;
+  }
+
+  .imgContainer {    
+    width: 80%;    
+  }
+  
+  .navItem {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .logo {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .navItem {
+    font-size: 7px;    
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 10px;
+  }  
 }
