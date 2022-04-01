@@ -1,7 +1,9 @@
 import SCP from './scpdata.json'
 
+// navs array stores names of scp files from json to loop through on button press. Also includes front page div id to hide
 const navs = ["frontpage"]
 
+// read json data to create scp content and push scp names to navs array
 const scp = SCP.map(
     (ScpData) => {
         navs.push(ScpData.Name)
@@ -17,6 +19,7 @@ const scp = SCP.map(
     }
 );
 
+// creates buttons with nav button function passing name for checking
 const navitems = SCP.map(
     (NavItem) => {
         return(
@@ -25,6 +28,7 @@ const navitems = SCP.map(
     }
 )
 
+// main content function
 function Content()
 {
     return(
@@ -48,6 +52,8 @@ function Content()
     );
 }
 
+// NavButton function receives scp file name then uses for loop to check values in navs array
+// hiding all divs that don't have matching id's and displaying the appropriate div element
 function NavButton(link)
 {
     for(const thislink of navs)
